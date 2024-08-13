@@ -7,6 +7,7 @@ import Notification from "./Notification";
 import DeleteNotification from "./DeleteNotification";
 
 const TodoItem = () => {
+  
   const [lists, setList] = useState([]);
   const [searchText, setSearchText] = useState("");
   const [message, setMessage] = useState(false);
@@ -51,8 +52,8 @@ const TodoItem = () => {
   };
 
 
-  const SaveList = (id,text) => {
-    const EditText = lists.map((item)=> item.id === id ? {...lists, text:text} : text)
+  const SaveList = (id, text) => {
+    const EditText = lists.map((item) => item.id === id ? { ...lists, text: text } : text)
     setList(EditText);
   }
 
@@ -68,8 +69,9 @@ const TodoItem = () => {
         data={searchText ? searchFilterData : lists}
         onDelete={deleteList}
         onComplete={completeList}
-        onSave ={SaveList}
+        onSave={SaveList}
       />
+
       {message && <Notification />}
       {deleteMessage && <DeleteNotification />}
     </div>

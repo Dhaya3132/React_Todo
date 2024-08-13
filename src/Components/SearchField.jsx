@@ -19,3 +19,5 @@ const SearchField = ({search}) => {
 }
 
 export default SearchField;
+
+//Search Field box

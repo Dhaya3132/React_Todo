@@ -11,3 +11,5 @@ const Notification = () => {
 }
 
 export default Notification;
+
+//Delete Notification when the task has complete it will pop up the notification

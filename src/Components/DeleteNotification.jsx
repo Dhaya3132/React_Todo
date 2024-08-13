@@ -11,3 +11,5 @@ const DeleteNotification = () => {
 }
 
 export default DeleteNotification;
+
+//Delete Notification when the task has delete it will pop up the notification
