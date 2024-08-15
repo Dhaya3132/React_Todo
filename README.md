@@ -17,11 +17,13 @@ This Todo List application is built using React and Vite, with Tailwind CSS for 
 
 src/
 |-- components/
-|   |-- AddTodo.jsx
+|   |-- AddField.jsx
 |   |-- Notification.jsx
-|   |-- Search.jsx
+|   |-- SearchField.jsx
 |   |-- TodoItem.jsx
 |   |-- TodoList.jsx
+|   |-- Header.jsx
+|   |-- DeleteNotification.jsx
 |-- styles/
 |   |-- App.css
 |-- App.jsx
